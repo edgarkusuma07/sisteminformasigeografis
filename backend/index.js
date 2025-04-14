@@ -12,10 +12,10 @@ const PORT = 2244;
 
 const corsOption = {
   origin: [
-    "https://gis_2205551142.manpits.xyz",
+    "https://gis_2205551144.manpits.xyz",
     "http://192.168.4.4",
     "http://localhost:3000",
-    "http://192.168.4.4:2242",
+    "http://192.168.4.4:2244",
   ],
   credentials: true,
   methods: ["GET", "POST"],
@@ -32,7 +32,7 @@ app.listen(PORT, () => {
 
 app.get("/", (req, res) => {
   res.send({
-    message: "Welcome to GIS API | 2205551142 🚀",
+    message: "Welcome to GIS API | 2205551144 🚀",
     endpoint: {
       locations: "http://localhost/api/locations",
       login: "http://localhost/api/login",
